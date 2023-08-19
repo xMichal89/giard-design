@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* -------------------------------------------- Stylowanie nawigacji ------------------------------------- */
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+}
+.navbar-nav {
+  font-size: 14px;
+}
+.bi-search {
+  cursor: pointer;
+}
+.searchBox {
+  width: 20px;
+  background-image: url(img/searchIcon.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 10px;
+  border: none;
+}
+.searchBox:focus {
+  width: 250px;
+  border: 1px solid black;
+  background: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+/* ------------------------------ Stylowanie sekcji slaid ----------------------------------------*/
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+#slider {
+  height: 100%;
+  width: 300%;
+  transition: all 0.3s;
+}
+#slider .slide {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide {
+  height: 100%;
+  width: 100%;
+}
+.controls .arrow {
+  position: absolute;
+}
+.arrowLeft {
+  right: 60px;
+  bottom: 10%;
+}
+.arrowRight {
+  right: 0;
+  bottom: 10%;
+}
+.arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #f5f0ec;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btnContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b5b31;
+  color: #f5f0ec;
+  font-size: 10px;
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+  margin: 10px;
+}
+.btnContact:hover {
+  color: #1b5b31;
+  background-color: #dcc1ab;
+  border: 1px solid #1b5b31;
+  border-color: #1b5b31;
+}
+.btnProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcc1ab;
+  border: 1px solid #1b5b31;
+  color: #1b5b31;
+  font-size: 10px;
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+  margin: 10px;
+}
+.btnProject:hover {
+  color: #f5f0ec;
+  background-color: #1b5b31;
+  border: 1px solid #1b5b31;
+  border-color: #1b5b31;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #dcc1ab;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100%;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+.content p {
+  font-family: "Inter", sans-serif;
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.img {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img1 {
+  background-image: url(img/garden1.jpg);
+}
+.img2 {
+  background-image: url(img/garden2.jpg);
+}
+.img3 {
+  background-image: url(img/garden3.jpg);
+}
+/* ------------------------------------------- Stylowanie sekcji oferta ------------------- */
+#offer {
+  background-color: #f5f0ec;
+}
+.offerHeader {
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+h6 {
+  color: #1b5b31;
+}
+.offerHeader p {
+  font-family: "Inter", sans-serif;
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.offerDescription {
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.linkProject {
+  color: #1b5b31;
+}
+.bi-pencil,
+.bi-eye,
+.bi-stars {
+  font-size: 35px;
+}
+.offer-item {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+.offer-item:hover {
+  box-shadow: 0 0 15px 5px #1b5b31;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+/* -------------------------- Stylowanie sekscji o firmie --------------------- */
+.aboutContent {
+  background-color: #1b5b31;
+  width: 50%;
+  height: 80vh;
+  color: #f5f0ec;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+#aboutus h6 {
+  color: #f5f0ec;
+}
+.aboutBtn {
+  color: #f5f0ec;
+  border: 1px solid #f5f0ec;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.aboutBtn:hover {
+  color: #1b5b31;
+  background-color: #f5f0ec;
+}
+.img4 {
+  background-image: url(img/garden4.jpg);
+  width: 50%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  #aboutus {
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+  }
+  .img4 {
+    width: 100%;
+    height: 50vh;
+  }
+  .aboutContent {
+    width: 100%;
+    height: 70vh;
+  }
+}
+/* ------------------------- Stylowanie sekcji projekty ------------------- */
+#project {
+  position: relative;
+  background-color: #dcc1ab;
+  height: 200vh;
+  overflow: hidden;
+}
+#project header {
+  padding: 60px;
+}
+
+.images::after {
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(transparent, #dcc1ab);
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 200vh;
+  pointer-events: none;
+}
+.projectBtn {
+  position: absolute;
+  top: 180vh;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+.image-item {
+  transition: all, 0.3s;
+}
+.image-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px 5px #1b5b31;
+}
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+  align-content: center;
+  justify-content: center;
+  z-index: 10;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.popup.hidden {
+  display: none;
+}
+.popup__img {
+  max-height: 80%;
+  max-width: 80%;
+}
+.popup__close {
+  background-color: transparent;
+  color: #fff;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  right: 10%;
+  font-size: 30px;
+  transition: opacity 0.3s;
+}
+.popup__close:hover {
+  opacity: 1;
+}
+.popup__arrow {
+  border: none;
+  opacity: 0.5;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  font-size: 30px;
+  height: 35px;
+  width: 35px;
+  line-height: 25px;
+  transition: opacity 0.3s;
+}
+.popup__arrow:hover {
+  opacity: 1;
+}
+.popup__arrow--left {
+  left: 5%;
+}
+.popup__arrow--right {
+  right: 5%;
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    z-index: 10;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+/* ------------------------ Stylowanie sekcji Instagram ----------------- */
+#instagram {
+  background-color: #f5f0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insta-box {
+  background-color: #1b5b31;
+  width: 70%;
+  height: 80%;
+  margin: 40px auto;
+  padding: 60px;
+  color: #f5f0ec;
+}
+.instaBtn {
+  background-color: #f5f0ec;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #1b5b31;
+  border: 1px solid #f5f0ec;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.instaBtn:hover {
+  background-color: #1b5b31;
+  color: #f5f0ec;
+}
+/* -------------------------------- Stylowanie sekcji footer -------------------- */
+footer {
+  background-color: #111;
+  color: #f5f0ec;
+  padding: 60px;
+}
+.footer-box {
+  width: 70%;
+  margin: auto;
+}
+.btnContactFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b5b31;
+  color: #f5f0ec;
+  font-size: 13px;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid #1b5b31;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.btnContactFooter:hover {
+  background-color: #111;
+  border-color: #1b5b31;
+}
+.list-inline-item a {
+  text-decoration: none;
+  color: #f5f0ec;
+}
+.list-inline-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f5f0ec;
+}
+.madeby img {
+  width: 70px;
+  height: 20px;
+}
